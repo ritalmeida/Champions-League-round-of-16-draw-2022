@@ -1,3 +1,12 @@
+/**
+ * Simple program to make the round of 16 draw of the Champions League 22/23.
+ * Considering the rules (that don't allow certain teams to play with others) and made specifically with the 16 teams that advaced to this stage in the season 2022/2023.
+ * You can change the teams in the Main.java file
+ *
+ *
+ * @author Rita Almeida
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -99,61 +108,6 @@ public class Main {
         Collections.shuffle(teams2);
         //System.out.println("Teams of Pot 2 suffled: ");
         //System.out.println(teams2.toString() + "\n");
-
-        /*int i = 0;
-        //Random random = new Random();
-        for (i = 0; i < teams1.size(); i++) {
-            //int index = random.nextInt(teams1.size());
-            //System.out.println("random team: " + teams1.get(index).toString());
-
-                if (isValid(teams1.get(i),teams2.get(i))){
-
-                    System.out.println(teams2.get(i).getName() + " x " + teams1.get(i).getName());
-                    teams2.remove(i);
-                    teams1.remove(i);
-
-                } else if (!isValid(teams1.get(i), teams2.get(i))) {
-
-                    if (teams2.get(i) != null) {
-                        System.out.println(teams2.get(i+1).getName() + " x " + teams1.get(i).getName());
-                    } else {
-                        i = 0;
-                        System.out.println(teams2.get(i).getName() + " x " + teams1.get(i).getName());
-                    }
-
-                    teams2.remove(i);
-                    teams1.remove(i);
-                }
-            //teams2.remove(i);
-            //teams1.remove(i);*/
-
-        /*for (int i = 0; i < teams1.size(); i++) {
-
-            for (int j = 0; j < teams2.size(); j++) {
-
-                if (isValid(teams1.get(i), teams2.get(j))){
-
-                    System.out.println(teams2.get(j).getName() + " x " + teams1.get(i).getName());
-                    teams2.remove(j);
-                    teams1.remove(i);
-                } else if (!isValid(teams1.get(i), teams2.get(j))) {
-
-                    i = 0;
-                    j = 0;
-                    //if (teams2.get(j) != null){
-
-                        System.out.println(teams2.get(j).getName() + " x " + teams1.get(i).getName());
-                        teams2.remove(j);
-                        teams1.remove(i);
-                    } else {
-
-                        System.out.println(teams2.get(j).getName() + " x " + teams1.get(i).getName());
-                        teams2.remove(j);
-                        teams1.remove(i);
-                    }
-                }
-            }
-        }*/
 
         while (teams1.size() != 0) {
 
